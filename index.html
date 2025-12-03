@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RHJ Norge AS — Kalesjer og Markiser</title>
+  <meta name="description" content="RHJ Norge AS — kalesjer, markiser og solskjerming. Lokalt håndverk, rask service og skreddersøm." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <img src="assets/logo-rhj.png" alt="RHJ Norge AS logo" class="logo">
+      </div>
+      <nav class="top-nav">
+        <a href="#tjenester">Tjenester</a>
+        <a href="#om">Om oss</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>RHJ Norge AS</h1>
+          <p class="lede">Kalesjer og markiser — kvalitet, lokal service og skreddersøm for alle behov.</p>
+          <p><a class="btn primary" href="#kontakt">Be om tilbud</a></p>
+        </div>
+        <div class="hero-image" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="tjenester" class="container cards-section">
+      <h2>Våre tjenester</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Kalesjer</h3>
+          <p>Vi leverer og monterer kalesjer til båt, bil, hage og uteområder. Skreddersøm og holdbar kvalitet.</p>
+        </article>
+        <article class="card">
+          <h3>Markiser</h3>
+          <p>Manuelle og motoriserte markiser, tilpasset fasade og bruk — solskjerming som varer.</p>
+        </article>
+        <article class="card">
+          <h3>Service & reparasjon</h3>
+          <p>Rask service, reperasjoner og reservedeler. Vi hjelper deg med vedlikehold og utbedringer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="om" class="container about">
+      <h2>Om RHJ Norge AS</h2>
+      <p>RHJ Norge AS er en lokal leverandør av kalesjer og markiser med fokus på kvalitet og håndverk. Vi tilbyr skreddersydde løsninger for privatkunder og bedrifter. <strong>Rask levering, profesjonell montering og god oppfølging</strong> er kjernen i vårt tilbud.</p>
+    </section>
+
+    <section id="kontakt" class="container contact">
+      <h2>Kontakt oss</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>RHJ Norge AS</strong><br>
+          Fredriksfrydveien 2<br>
+          1792 Tistedal</p>
+
+          <p><strong>E-post:</strong> <a href="mailto:kontakt@rhjnorge.no">kontakt@rhjnorge.no</a><br>
+          <strong>Telefon:</strong> <a href="tel:+47XXXXXXXX">+47 XX XX XX XX</a></p>
+        </div>
+
+        <div>
+          <form action="mailto:kontakt@rhjnorge.no" method="post" enctype="text/plain">
+            <label for="navn">Navn</label>
+            <input id="navn" name="navn" placeholder="Ditt navn" required>
+
+            <label for="tlf">Telefon</label>
+            <input id="tlf" name="telefon" placeholder="+47 xx xx xx xx">
+
+            <label for="melding">Melding</label>
+            <textarea id="melding" name="melding" rows="5" placeholder="Fortell oss kort hva du trenger" required></textarea>
+
+            <button class="btn" type="submit">Send forespørsel</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> RHJ Norge AS — Kalesjer og Markiser. Org.nr. (legg inn org.nr her).</p>
+      <nav class="footer-links">
+        <a href="privacy.html">Personvern</a>
+        <a href="terms.html">Vilkår</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
