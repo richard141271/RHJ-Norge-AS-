@@ -6,6 +6,7 @@
   <title>Kontakt – RHJ Norge AS</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-900 text-gray-100">
 
 <header class="bg-gray-800 border-b border-gray-700">
@@ -19,49 +20,44 @@
       <a href="tjenester.html" class="hover:text-yellow-300">Tjenester</a>
       <a href="franchise.html" class="hover:text-yellow-300">Franchise</a>
       <a href="om-oss.html" class="hover:text-yellow-300">Om oss</a>
-      <a href="kontakt.html" class="hover:text-yellow-300">Kontakt</a>
+      <a href="kontakt.html" class="text-yellow-300">Kontakt</a>
     </nav>
   </div>
 </header>
 
-
 <section class="max-w-6xl mx-auto px-5 py-20">
   <h1 class="text-4xl font-bold mb-8">Kontakt oss</h1>
+
   <p class="text-gray-300 mb-10">
-    Du kan kontakte oss via e-post eller bruke vårt selvbetjeningsskjema.
+    Du kan kontakte oss via e-post, eller bruke vårt enkle selvbetjeningsskjema.
   </p>
 
   <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
     <h2 class="text-2xl font-semibold mb-6">Selvbetjeningsskjema</h2>
 
-    <form
-      action="mailto:post@kias.no"
-      method="GET"
-      enctype="text/plain"
-      class="space-y-6"
-    >
+    <form action="mailto:post@kias.no" method="GET" enctype="text/plain" class="space-y-6">
       <div>
-        <label class="block mb-1 text-gray-300">Navn</label>
+        <label class="block mb-1">Navn</label>
         <input type="text" name="navn" class="w-full p-3 rounded bg-gray-700 border border-gray-600">
       </div>
 
       <div>
-        <label class="block mb-1 text-gray-300">E-post</label>
+        <label class="block mb-1">E-post</label>
         <input type="email" name="epost" class="w-full p-3 rounded bg-gray-700 border border-gray-600">
       </div>
 
       <div>
-        <label class="block mb-1 text-gray-300">Hva gjelder henvendelsen?</label>
+        <label class="block mb-1">Hva gjelder det?</label>
         <input type="text" name="emne" class="w-full p-3 rounded bg-gray-700 border border-gray-600">
       </div>
 
       <div>
-        <label class="block mb-1 text-gray-300">Melding</label>
+        <label class="block mb-1">Melding</label>
         <textarea name="melding" rows="5" class="w-full p-3 rounded bg-gray-700 border border-gray-600"></textarea>
       </div>
 
       <button class="px-6 py-3 bg-yellow-500 text-black font-semibold rounded hover:bg-yellow-400">
-        Send via e-postklienten
+        Send via e-post
       </button>
     </form>
   </div>
