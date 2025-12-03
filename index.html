@@ -4,119 +4,126 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>RHJ Norge AS — Kalesjer & Markiser</title>
-  <meta name="description" content="RHJ Norge AS — Kalesjer, markiser, solskjerming og industrisøm. 40 år med håndverk og kvalitet." />
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="RHJ Norge AS — Kalesjer, markiser, solskjerming og industrisøm. 40 år med håndverk. Kontakt via post@kias.no eller selvbetjening." />
+  <style>
+    :root{--bg:#0b0b0b;--panel:#121213;--muted:#9aa1a6;--accent:#e23b36;--card:#151515;--text:#e6e6e6}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:var(--text);background:linear-gradient(180deg,#060606 0,#0b0b0b 100%);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:1100px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px}
+    .brand{display:flex;gap:18px;align-items:center}
+    .brand img{height:64px;width:auto;border-radius:6px}
+    .brand h1{font-size:28px;margin:0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{display:flex;gap:32px;align-items:flex-start;margin-bottom:36px}
+    .hero-left{flex:1}
+    .kicker{color:var(--accent);font-weight:700;font-size:12px;padding:6px 10px;border-radius:8px;background:rgba(226,59,54,0.06);display:inline-block}
+    h2{font-size:40px;margin:12px 0}
+    p.lead{color:var(--muted);line-height:1.6}
+    .cta{display:inline-block;margin-top:14px;background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    .hero-right{width:320px;height:200px;background:linear-gradient(135deg,#2a0f0f, #151013);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:36px 0}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,0.03);padding:20px;border-radius:12px}
+    .card h3{margin:0 0 8px 0}
+    .section{margin:48px 0}
+    footer{border-top:1px solid rgba(255,255,255,0.03);padding-top:24px;margin-top:48px;color:var(--muted);display:flex;justify-content:space-between;align-items:flex-start}
+    .contact{max-width:420px}
+    .contact h4{margin:0 0 8px 0}
+    a.email{color:#7ad0ff;text-decoration:underline}
+    form{display:grid;gap:12px}
+    input,textarea{background:#0e0e0e;border:1px solid rgba(255,255,255,0.03);padding:10px;border-radius:8px;color:var(--text)}
+    button{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);padding:10px 12px;border-radius:8px;cursor:pointer}
+    .small{color:var(--muted);font-size:13px}
+    @media (max-width:760px){.hero{flex-direction:column}.hero-right{width:100%;height:160px}}
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo-wrap">
-        <a href="/">
-          <img src="assets/logo-rhj.png" alt="RHJ Norge AS logo" class="logo">
-        </a>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- Legg inn logo i repo: assets/rhj-logo.png -->
+        <img src="assets/rhj-logo.png" alt="RHJ Norge AS logo" onerror="this.style.opacity=.35;this.alt='RHJ logo mangler'" />
+        <div>
+          <h1>RHJ Norge AS</h1>
+          <div class="small">Kalesjer, markiser, solskjerming og industrisøm — 40 år med håndverk og lokal service</div>
+        </div>
       </div>
-
-      <nav class="top-nav" aria-label="Hovedmeny">
+      <nav>
         <a href="#tjenester">Tjenester</a>
-        <a href="#om">Om oss</a>
         <a href="#franchise">Franchise</a>
+        <a href="#om">Om oss</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1 id="hero-title">RHJ Norge AS</h1>
-          <p class="lede"><strong>Kalesjer, markiser, solskjerming og industrisøm.</strong> 40 år med håndverk, skreddersøm og lokal service.</p>
-          <p><a class="btn primary" href="#kontakt">Be om tilbud</a></p>
-          <p class="meta">Vi leverer til privat, næring og maritim sektor — og bygger nå vår franchise for alle sømfag.</p>
-        </div>
-
-        <div class="hero-image" role="img" aria-hidden="true"></div>
+    <section class="hero">
+      <div class="hero-left">
+        <div class="kicker">40 ÅR • HÅNDVERK</div>
+        <h2>Skreddersøm for privat, næring og maritime kunder</h2>
+        <p class="lead">RHJ leverer kalesjer, presenninger, markiser og industrisøm — med fokus på holdbare materialer og nøyaktig søm. Vi utvikler nå en franchise for å gi lokale aktører full support og skalerbar kvalitet.</p>
+        <a class="cta" href="#kontakt">Be om tilbud</a>
+        <p class="small" style="margin-top:10px">Kontakt via <a class="email" href="mailto:post@kias.no">post@kias.no</a> eller bruk vår selvbetjening (lenke under).</p>
       </div>
+      <div class="hero-right" aria-hidden="true"></div>
     </section>
 
-    <section id="tjenester" class="container cards-section">
-      <h2>Våre tjenester</h2>
-      <div class="cards">
-        <article class="card">
+    <section id="tjenester">
+      <h3>Våre tjenester</h3>
+      <div class="grid" style="margin-top:14px">
+        <div class="card">
           <h3>Kalesjer</h3>
-          <p>Skreddersydde kalesjer til båt, uteplasser, varemoro og industribruk — holdbare materialer og presis søm.</p>
-        </article>
-
-        <article class="card">
+          <p class="small">Skreddersydde kalesjer for båt, uteplasser og varetransport — robuste materialer og presis utførelse.</p>
+        </div>
+        <div class="card">
           <h3>Markiser & solskjerming</h3>
-          <p>Manuelle og motoriserte markiser, lerreter og persienner — estetikk og funksjon i skjønn forening.</p>
-        </article>
-
-        <article class="card">
+          <p class="small">Manuelle og motoriserte markiser, lerreter og persienner — estetikk og funksjon i skjønn forening.</p>
+        </div>
+        <div class="card">
           <h3>Industrisøm</h3>
-          <p>Tekniske tekstiler, presenninger og produksjon for industri og næring — vi løser krevende oppgaver.</p>
-        </article>
-
-        <article class="card">
+          <p class="small">Tekniske tekstiler, presenninger og industristandard arbeid for bedrifter og anlegg.</p>
+        </div>
+        <div class="card">
           <h3>Service & reparasjon</h3>
-          <p>Rask service og reparasjon — vi forlenger levetiden til dine tekstilprodukter og kalesjer.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="franchise" class="container about">
-      <h2>Franchise & samarbeid</h2>
-      <p>RHJ bygger en franchise-modell som lar lokale aktører tilby komplette sømløsninger under vårt varemerke. Modellen dekker opplæring, materiale, produksjonsoppsett og salgstøtte — fokus på skalerbar kvalitet.</p>
-      <p class="muted">Interessert i å bli franchisepartner? Send oss en forespørsel via kontaktskjemaet nedenfor.</p>
-    </section>
-
-    <section id="om" class="container about">
-      <h2>Om oss</h2>
-      <p>RHJ Norge AS har drevet innen tekstil- og sømarbeid siden 1985. Vi kombinerer tradisjonelt håndverk med moderne materialer og teknikk for å gi kundene robuste og estetiske løsninger.</p>
-    </section>
-
-    <section id="kontakt" class="container contact">
-      <h2>Kontakt oss</h2>
-      <div class="contact-grid">
-        <div>
-          <p><strong>RHJ Norge AS</strong><br>
-          Fredriksfrydveien 2<br>
-          1792 Tistedal</p>
-
-          <p><strong>E-post:</strong> <a href="mailto:kontakt@rhjnorge.no">kontakt@rhjnorge.no</a><br>
-          <strong>Telefon:</strong> <a href="tel:+47XXXXXXXX">+47 XX XX XX XX</a></p>
-        </div>
-
-        <div>
-          <form action="mailto:kontakt@rhjnorge.no" method="post" enctype="text/plain">
-            <label for="navn">Navn</label>
-            <input id="navn" name="navn" placeholder="Ditt navn" required>
-
-            <label for="tlf">Telefon</label>
-            <input id="tlf" name="telefon" placeholder="+47 xx xx xx xx">
-
-            <label for="melding">Melding</label>
-            <textarea id="melding" name="melding" rows="5" placeholder="Kort beskrivelse av behov" required></textarea>
-
-            <button class="btn" type="submit">Send forespørsel</button>
-          </form>
+          <p class="small">Rask service og reservedeler — vi sørger for levetid og trygg bruk.</p>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> RHJ Norge AS — Kalesjer & Markiser. Org.nr. (legg inn org.nr her).</p>
-      <nav class="footer-links" aria-label="Footer lenker">
-        <a href="privacy.html">Personvern</a>
-        <a href="terms.html">Vilkår</a>
-      </nav>
-    </div>
-  </footer>
+    <section id="franchise" class="section">
+      <h3>Franchise & samarbeid</h3>
+      <p class="small">Vi bygger en franchise-modell som lar lokale aktører tilby komplette sømløsninger under RHJ-merkevaren. Modellen inkluderer opplæring, materialtilgang og salgstøtte — fokus på skalerbar kvalitet og ansvarlighet.</p>
+    </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <section id="om" class="section">
+      <h3>Om oss</h3>
+      <p class="small">RHJ Norge AS har drevet innen tekstil- og sømarbeid siden 1985. Vår erfaring gir solid håndverk og tett oppfølging. Vi kombinerer tradisjonelt håndverk med moderne teknikker for best mulig resultat.</p>
+    </section>
+
+    <footer id="kontakt">
+      <div class="contact">
+        <h4>Kontakt oss</h4>
+        <p class="small">RHJ Norge AS<br>Fredriksfrydveien 2<br>1792 Tistedal</p>
+        <p class="small">E-post: <a class="email" href="mailto:post@kias.no">post@kias.no</a></p>
+        <p class="small">Vi har valgt e-post og selvbetjening som kontaktkanaler. For raskest respons: send oss detaljer om behovet via e-post eller bruk skjemaet til høyre.</p>
+      </div>
+
+      <div style="max-width:420px">
+        <h4>Selvbetjening</h4>
+        <form action="mailto:post@kias.no" method="post" enctype="text/plain">
+          <input type="text" name="Navn" placeholder="Ditt navn" required />
+          <input type="email" name="E-post" placeholder="Din e-post" required />
+          <input type="text" name="Adresse" placeholder="Adresse (valgfritt)" />
+          <textarea name="Melding" rows="5" placeholder="Kort beskrivelse av behov (mål, målestørrelser, materiale osv.)" required></textarea>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button type="submit">Send forespørsel</button>
+            <button type="reset">Nullstill</button>
+          </div>
+        </form>
+        <p class="small" style="margin-top:8px">Alternativ: send e-post til <a class="email" href="mailto:post@kias.no">post@kias.no</a> med bilder og mål.</p>
+      </div>
+    </footer>
+
+    <div style="text-align:center;margin-top:28px;color:var(--muted);font-size:13px">© 2025 RHJ Norge AS — Kalesjer & Markiser. Org.nr. (legg inn org.nr her). <a href="#" style="color:var(--muted);text-decoration:underline;margin-left:8px">Personvern</a> <span style="margin:0 6px">•</span> <a href="#" style="color:var(--muted);text-decoration:underline">Vilkår</a></div>
+  </div>
 </body>
 </html>
