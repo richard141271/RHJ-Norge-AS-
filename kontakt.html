@@ -6,17 +6,19 @@
   <title>Kontakt – RHJ Norge AS</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-gray-100 antialiased">
+
+<body class="bg-gray-900 text-gray-100 antialiased flex flex-col min-h-screen">
+
+  <!-- Header -->
   <header class="bg-gray-800 border-b border-gray-700">
     <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
       <a href="index.html" class="flex items-center gap-4">
-          <img
-    src="/assets/ChatGPT Image 3. des. 2025, 04_16_59.png"
-    alt="RHJ Norge AS"
-    class="h-8 sm:h-10 md:h-16 lg:h-24 xl:h-28 w-auto block"
-    style="max-width:420px;"
-  >
-        <span class="text-xl font-semibold tracking-tight"> </span>
+        <img
+          src="/assets/ChatGPT Image 3. des. 2025, 04_16_59.png"
+          alt="RHJ Norge AS"
+          class="h-8 sm:h-10 md:h-16 lg:h-24 xl:h-28 w-auto block"
+          style="max-width:420px;"
+        >
       </a>
       <nav class="flex gap-6">
         <a href="tjenester.html" class="hover:text-yellow-300">Tjenester</a>
@@ -27,16 +29,34 @@
     </div>
   </header>
 
-<a href="mailto:post@kias.no?subject=Forespørsel%20RHJ%20Norge"
-   class="inline-block px-6 py-3 bg-yellow-500 text-black font-semibold rounded hover:bg-yellow-400 transition">
-   📧 Send e-post til oss
-</a>
+  <!-- Main -->
+  <main class="flex-grow flex items-center justify-center px-6 py-20">
+    <div class="text-center max-w-xl">
 
+      <h1 class="text-4xl font-bold mb-6">Kontakt oss</h1>
 
-  <footer class="bg-gray-800 border-t border-gray-700 mt-16">
+      <p class="text-gray-300 mb-10">
+        Send oss en e-post, så svarer vi så raskt som mulig.
+      </p>
+
+      <a href="mailto:post@kias.no?subject=Forespørsel%20RHJ%20Norge"
+         class="inline-block px-10 py-4 bg-yellow-500 text-black font-semibold rounded-lg 
+                hover:bg-yellow-400 transition text-lg shadow-lg">
+         📧 Send e-post
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 border-t border-gray-700">
     <div class="max-w-6xl mx-auto p-5 text-center text-gray-400">
-      © 2025 RHJ Norge AS — Kontakt: <a href="mailto:post@kias.no" class="text-yellow-300">post@kias.no</a>
+      © 2025 RHJ Norge AS — 
+      <a href="mailto:post@kias.no" class="text-yellow-300 hover:underline">
+        post@kias.no
+      </a>
     </div>
   </footer>
+
 </body>
 </html>
